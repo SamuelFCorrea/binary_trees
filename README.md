@@ -22,3 +22,4 @@ In computer science, a binary tree is a tree data structure in which each node h
 * [binary_tree_is_full](15-binary_tree_is_full.c) - Checks if a binary tree is full.
 * [binary_tree_is_perfect](16-binary_tree_is_perfect.c) - Checks if a binary tree is perfect.
 * [binary_tree_sibling](17-binary_tree_sibling.c) - Finds the sibling of a node.
+* [binary_tree_uncle](18-binary_tree_uncle.c) - Finds the uncle of a node.

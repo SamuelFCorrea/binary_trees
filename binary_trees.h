@@ -100,6 +100,12 @@ int full(const binary_tree_t *);
 /*		finds the sibling of a node		*/
 binary_tree_t *binary_tree_sibling(binary_tree_t *);
 
+/*		finds the node uncle		*/
+binary_tree_t *binary_tree_uncle(binary_tree_t *);
+
+/*		finds the lowest common ancestor of two nodes		*/
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *, const binary_tree_t *);
+size_t ancestor_depth(const binary_tree_t *);
 
 
 #endif /* _BINARY_TREES_H_ */
