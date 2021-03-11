@@ -9,6 +9,8 @@
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
+	if (!tree)
+		return (0);
 	if (!full(tree))
 		return (0);
 	if (depth(tree->left) != depth(tree->right))
@@ -20,7 +22,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
  * full - checks if a binary tree is perfect
  * @tree: root
  *
- * Return: 1 if its', otherwhise 0
+ * Return: 1 if it's, otherwhise 0
  */
 
 int full(const binary_tree_t *tree)
