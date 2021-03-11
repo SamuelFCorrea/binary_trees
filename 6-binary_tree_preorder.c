@@ -27,8 +27,8 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 void preorder(const binary_tree_t *act, void (*func)(int))
 {
 	func(act->n);
-	left(act, func);
-	right(act, func);
+	po_left(act, func);
+	po_right(act, func);
 }
 
 /**
@@ -42,7 +42,7 @@ void preorder(const binary_tree_t *act, void (*func)(int))
 void po_left(const binary_tree_t *act, void (*func)(int))
 {
 	if (act->left)
-		runer(act->left, func);
+		preorder(act->left, func);
 }
 
 /**
@@ -56,5 +56,5 @@ void po_left(const binary_tree_t *act, void (*func)(int))
 void po_right(const binary_tree_t *act, void (*func)(int))
 {
 	if (act->right)
-		runer(act->right, func);
+		preorder(act->right, func);
 }
